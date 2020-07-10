@@ -9,7 +9,7 @@ standard git repo information
 github .yml files
 ### .scripts
 #### ./scripts/do.sums.bash
-creates and checks the sha512.sum file (a checksum) then commits with the current time in epoch seconds (then `git push`es)
+creates and checks the sha512.sum file (a checksum) then commits with the current time in seconds via https://github.com/BuildAPKs/maintenance.BuildAPKs/blob/master/sn.sh (then `git push`es)
 #### ./scripts/tgen.bash
 creates setupTermuxArch.tar.gz by moving base level bash scripts to gen/ and performing sha512sum on them. Calls do.sums.bash and vgen.sh
 TODO: Also does `cp setupTermuxArch.bash setupTermuxArch.sh`, find out the purpose of this
